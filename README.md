@@ -7,7 +7,7 @@ Shiny application to generate hexsticker
 [![Travis build status](https://travis-ci.org/jhk0530/polaroid.svg?branch=master)](https://travis-ci.org/jhk0530/polaroid)
 <!-- badges: end -->
 
-### :wrench: Install & Run
+## :wrench: Install & Run
 
 ```r
 require(devtools)
@@ -17,6 +17,18 @@ library(polaroid)
 polaroid()
 
 ```
+
+------
+
+## :rocket: Description and Running Example
+
+<img src='https://community-cdn.rstudio.com/uploads/default/original/3X/5/4/540f6574ea21368111b5259e333c28a56fc63d3f.png'>
+
+<br>
+
+<img src='https://community-cdn.rstudio.com/uploads/default/original/3X/6/2/6203f5e7fe48e58d0b0887612c2e8e91e4516680.gif'>
+
+------
 
 ## :paperclip: Dependency
 * [argonDash](https://github.com/RinteRface/argonDash) - 0.2.0
@@ -34,7 +46,7 @@ polaroid()
 ## :cloud: ShinyApps
 https://jhkim.shinyapps.io/polaroid/
 
-### :memo: License
+## :memo: License
 Copyright :copyright: 2020 Jinhwan Kim
 This project is [MIT](https://opensource.org/licenses/MIT) licensed
 
