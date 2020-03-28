@@ -7,8 +7,7 @@ r:
   - release
   - devel
 os:
-  - osx
-  - linux
+  - osx  
 matrix:
     exclude:
     - r: devel
