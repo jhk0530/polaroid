@@ -3,6 +3,8 @@
 #' @description run polaroid shiny application in appDir
 #' @seealso https://github.com/jhk0530/polaroid
 #'
+#' @examples polaroid()
+#'
 #' @import shiny
 #' @return None
 #'

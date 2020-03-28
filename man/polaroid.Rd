@@ -12,6 +12,10 @@ None
 \description{
 run polaroid shiny application in appDir
 }
+\examples{
+polaroid()
+
+}
 \seealso{
 https://github.com/jhk0530/polaroid
 }
