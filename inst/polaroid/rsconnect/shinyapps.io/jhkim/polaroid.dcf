@@ -1,0 +1,12 @@
+name: polaroid
+title: polaroid
+username:
+account: jhkim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2010937
+bundleId: 2935243
+url: https://jhkim.shinyapps.io/polaroid/
+when: 1585375433.75453
+asMultiple: FALSE
+asStatic: FALSE
