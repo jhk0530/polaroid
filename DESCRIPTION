@@ -1,6 +1,6 @@
 Package: polaroid
 Title: Create 'hexSticker' for R package with 'shiny'
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     person(given = "Jinhwan",
            family = "Kim",
@@ -9,7 +9,7 @@ Authors@R:
 Description: Create hexagonal shape sticker image.
   'polaroid' can be used in user's web browser.
   'polaroid' can be used in 'shinyapps.io'.
-  In both way, user can download created hexsticker as 'PNG' image.
+  In both way, user can download created 'hexSticker' as 'PNG' image.
   'polaroid' is built based on 'argonDash', 'colourpicker' and 'hexSticker' R package.
 License: MIT + file LICENSE
 URL: https://github.com/jhk0530/polaroid
