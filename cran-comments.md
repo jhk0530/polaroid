@@ -45,3 +45,12 @@ Possibly mis-spelled words in DESCRIPTION:
 
 - I modified Title field as Title case.
   
+# Round 4
+
+## Reviewer Comments (Auto)
+
+No examples, no tests, no vignettes
+
+## Submission Comment
+
+- I documented example code. 

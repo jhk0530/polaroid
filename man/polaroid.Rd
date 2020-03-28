@@ -13,7 +13,7 @@ None
 run polaroid shiny application in appDir
 }
 \examples{
-polaroid()
+\dontrun{ polaroid() }
 
 }
 \seealso{
