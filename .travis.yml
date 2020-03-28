@@ -2,3 +2,17 @@
 
 language: R
 cache: packages
+r:
+  - oldrel
+  - release
+  - devel
+os:
+  - osx
+  - linux
+matrix:
+    exclude:
+    - r: devel
+      os: osx
+repos:
+  CRAN: https://cran.r-project.org
+  
