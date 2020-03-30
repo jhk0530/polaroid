@@ -1,5 +1,5 @@
 Package: polaroid
-Title: Create 'hexSticker' for R Package with 'shiny'
+Title: Create Hex Stickers with 'shiny'
 Version: 0.0.1
 Authors@R: 
     person(given = "Jinhwan",

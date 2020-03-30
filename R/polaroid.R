@@ -3,7 +3,7 @@
 #' @description run polaroid shiny application in appDir
 #' @seealso https://github.com/jhk0530/polaroid
 #'
-#' @examples \dontrun{ polaroid() }
+#' @examples if(interactive()){ polaroid() }
 #'
 #' @import shiny
 #' @return None

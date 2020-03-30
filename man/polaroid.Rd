@@ -13,7 +13,7 @@ None
 run polaroid shiny application in appDir
 }
 \examples{
-\dontrun{ polaroid() }
+if(interactive()){ polaroid() }
 
 }
 \seealso{

@@ -54,3 +54,33 @@ No examples, no tests, no vignettes
 ## Submission Comment
 
 - I documented example code. 
+
+# Round 5
+
+## Review Commments
+
+Thanks, I'm not sure if this title is very helpful...
+What do you mean with "for R Package"?
+Maybe just:
+Create Hex Stickers with 'shiny'
+
+Please replace \dontrun{} by if(interactive()){} in your Rd-file.
+
+Please fix and resubmit.
+
+Best,
+Swetlana Herbrandt
+
+2020-03-30
+
+## Submission Comment
+
+Thanks for awesome suggestion.
+
+- I changed title as Create Hex Stickers with 'shiny'
+- I replaced \dontrun{} by if(interactive()){}
+
+Regards.
+
+
+
