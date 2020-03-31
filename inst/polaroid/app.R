@@ -4,6 +4,7 @@
 #' @import ggplot2
 #' @import grid
 #' @import hexSticker
+#' @import imager
 #' @import png
 #' @import shiny
 #' @import shinyWidgets
@@ -76,14 +77,14 @@ ui <- argonDashPage(
     tags$head(tags$style(type = "text/css", "#tab-shot {background:#70390d !important}")),
     tags$head(tags$style(type = "text/css", "#img {margin:auto !important}")),
     tags$head(tags$style(type = "text/css", ".navbar-brand-img {height:8em; max-height:none !important;}")),
-    tags$head(tags$style(type = "text/css", ".footer {background: #172b4d; bottom: 2em; border-radius: 1em; padding: 0.2rem; width: 95%; position: absolute;}")),
+    tags$head(tags$style(type = "text/css", ".footer {background: #172b4d; border-radius: 1em; padding: 0.2rem; width: 95%; position: absolute;}")),
     tags$head(tags$style(type = "text/css", ".footer .nav .nav-item .nav-link, .font-weight-bold {font-size:1.5em; color:#FFFFFF !important; font-weight:bold; }")),
     setSliderColor(rep("#6772e5", 11), 1:11),
     shiny::fluidRow(
       shiny::column(
         argonCard(
           icon = argonIcon("check-bold"),
-          plotOutput("img", width = 259, height = 300),
+          plotOutput("img"),
           width = 12
         ),
         style='text-align:center',
@@ -198,6 +199,9 @@ ui <- argonDashPage(
 )
 
 server <- function(input, output, session) {
+
+  # ====== set img margin narrow
+
   mysticker <- function(im, img_x, img_y, img_width, img_height,
                         pkg_name, pkg_x, pkg_y, pkg_color, pkg_size,
                         background_color , border_color,
@@ -209,7 +213,8 @@ server <- function(input, output, session) {
       geom_pkgname(pkg_name, pkg_x, pkg_y, pkg_color, font_family, pkg_size) +
       geom_url(url, urlx, urly, font_family, url_size, url_color, url_angle) +
       annotation_custom(rasterGrob(im, interpolate = FALSE), img_x, img_x + img_width, img_y, img_y + img_height) +
-      theme_sticker(size = h_size)
+      theme_sticker(size = h_size) +
+      ggsave(width = 43.9, height = 50.8, filename ='temp.png', dpi = 300, bg = 'transparent', units = 'mm')
   }
 
   observeEvent(input$polaroid, {
@@ -218,7 +223,11 @@ server <- function(input, output, session) {
                    input$pkg_name, input$pkg_x, input$pkg_y, input$pkg_color, (input$pkg_size*2/5),
                    input$background_color, input$border_color,
                    input$url, input$url_x, input$url_y, input$url_color, (input$url_size*2/5), input$url_angle)
-    output$img <- renderPlot(s, width = 259, height = 300, res = 72, execOnResize = TRUE)
+
+    output$img <- renderPlot({
+      par(mar = c(0.8,0.8,0.8,0.8))
+      plot(imager::load.image('temp.png'), axes = FALSE)
+      })
 
     output$imgdn <- downloadHandler(
       filename = "my_polaroid_sticker.png",
@@ -239,7 +248,10 @@ server <- function(input, output, session) {
                    input$background_color, input$border_color,
                    input$url, input$url_x, input$url_y, input$url_color, (input$url_size*2/5), input$url_angle)
 
-    output$img <- renderPlot(s, width = 259, height = 300, res = 72, execOnResize = TRUE)
+    output$img <- renderPlot({
+      par(mar = c(0.8,0.8,0.8,0.8))
+      plot(imager::load.image('temp.png'), axes = FALSE)
+    })
 
     output$imgdn <- downloadHandler(
       filename = "my_polaroid_sticker.png",
@@ -259,7 +271,13 @@ server <- function(input, output, session) {
                    input$pkg_name, input$pkg_x, input$pkg_y, input$pkg_color, (input$pkg_size*2/5),
                    input$background_color, input$border_color,
                    input$url, input$url_x, urly = input$url_y, input$url_color, (input$url_size*2/5), input$url_angle)
-    output$img <- renderPlot(s, width = 259, height = 300)
+
+    output$img <- renderPlot({
+      par(mar = c(0.8,0.8,0.8,0.8))
+      plot(imager::load.image('temp.png'), axes = FALSE)
+    })
+
+
     output$imgdn <- downloadHandler(
       filename = "my_polaroid_sticker.png",
       content = function(file = filename) {
@@ -270,4 +288,12 @@ server <- function(input, output, session) {
 
 }
 
-shinyApp(ui, server)
+shinyApp(
+  ui,
+  server,
+  onStart = function(){
+    shiny::onStop(function(){
+      file.remove('temp.png')
+    })
+  }
+)
