@@ -5,6 +5,9 @@ Shiny application to generate hexsticker
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/jhk0530/polaroid.svg?branch=master)](https://travis-ci.org/jhk0530/polaroid)
+
+<img src='https://www.r-pkg.org/badges/version/polaroid'>
+
 <!-- badges: end -->
 
 ## :wrench: Install & Run
