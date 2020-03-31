@@ -1,6 +1,6 @@
 Package: polaroid
 Title: Create Hex Stickers with 'shiny'
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
     person(given = "Jinhwan",
            family = "Kim",
@@ -24,6 +24,7 @@ Imports:
   ggplot2,
   grid,
   hexSticker,
+  imager,
   png,
   shiny,
   shinyWidgets
