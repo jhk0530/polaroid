@@ -1,6 +1,6 @@
 Package: polaroid
 Title: Create Hex Stickers with 'shiny'
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person(given = "Jinhwan",
            family = "Kim",
