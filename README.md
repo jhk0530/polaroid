@@ -16,7 +16,7 @@ Shiny application to generate hexsticker
 # CRAN version. (0.0.1)
 install.packages('polaroid')
 
-# Development Version. (0.0.2)
+# Development Version. (0.0.3)
 require(devtools)
 devtools::install_github('jhk0530/polaroid')
 
