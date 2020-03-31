@@ -5,20 +5,23 @@ Shiny application to generate hexsticker
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/jhk0530/polaroid.svg?branch=master)](https://travis-ci.org/jhk0530/polaroid)
-
 <img src='https://www.r-pkg.org/badges/version/polaroid'>
-
 <!-- badges: end -->
 
 ## :wrench: Install & Run
 
+```
+
 ```r
+# CRAN version. (0.0.1)
+install.packages('polaroid')
+
+# Development Version. (0.0.2)
 require(devtools)
 devtools::install_github('jhk0530/polaroid')
 
 library(polaroid)
 polaroid()
-
 ```
 
 ------
