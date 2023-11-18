@@ -86,3 +86,6 @@ Regards.
 
 ## Round 1
 
+* Removed gallery (with not available URLs)
+
+## Round 2
