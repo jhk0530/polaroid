@@ -35,6 +35,6 @@ https://jhkim.shinyapps.io/polaroid/
 
 ## :memo: License
 Copyright :copyright: 2020 Jinhwan Kim
-This project is [MIT](https://opensource.org/licenses/MIT) licensed
+This project is [MIT](https://opensource.org/license/mit/) licensed
 
 *This README was generated with :two_hearts: by [shinyReadme](https://github.com/jhk0530/shinyReadme)*

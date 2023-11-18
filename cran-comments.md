@@ -89,3 +89,5 @@ Regards.
 * Removed gallery (with not available URLs)
 
 ## Round 2
+
+* modified MIT license link
