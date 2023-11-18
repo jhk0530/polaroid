@@ -1,0 +1,27 @@
+#my_sidebar {
+  overflow:inherit;
+}
+
+html, body, .main-content {
+  height : 100%;
+}
+
+#tab-shot {
+  background:#70390d !important
+}
+
+#img {
+  margin:auto !important
+}
+
+.navbar-brand-img {
+  height:8em; max-height:none !important;
+}
+
+.footer {
+  background: #172b4d; border-radius: 1em; padding: 0.2rem; width: 95%; position: absolute;
+}
+
+.footer .nav .nav-item .nav-link, .font-weight-bold {
+  font-size:1.5em; color:#FFFFFF !important; font-weight:bold;
+}

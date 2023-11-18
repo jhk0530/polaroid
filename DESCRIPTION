@@ -1,6 +1,6 @@
 Package: polaroid
 Title: Create Hex Stickers with 'shiny'
-Version: 0.0.3
+Version: 0.1.0
 Authors@R: 
     person(given = "Jinhwan",
            family = "Kim",
@@ -16,16 +16,7 @@ URL: https://github.com/jhk0530/polaroid
 BugReports: https://github.com/jhk0530/polaroid/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.2.3
 Imports: 
-  argonDash,
-  argonR,
-  colourpicker,
-  ggplot2,
-  grid,
-  hexSticker,
-  imager,
-  png,
-  shiny,
-  shinyWidgets
-
+    shiny
+    
