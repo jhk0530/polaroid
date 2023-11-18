@@ -23,7 +23,7 @@ polaroid()
 
 ## :rocket: Description and Running Example
 
-<img src='inst/images/description.png'>
+<img src='inst/images/Description.png'>
 
 ------
 
