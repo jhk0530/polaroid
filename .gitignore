@@ -39,3 +39,6 @@ vignettes/*.pdf
 .Renviron
 .Rproj.user
 .DS_Store
+
+# shinyapps
+inst/polaroid/rsconnect

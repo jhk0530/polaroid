@@ -277,7 +277,7 @@ mysticker <- function(im, img_x, img_y, img_width, img_height,
   if(font_family==''){font_family <- "Aller_Rg"}
   if(is.null(font_family)){font_family <- "Aller_Rg"}
 
-  ggplot() +
+  g <- ggplot() +
     geom_hexagon(border_width, background_color, border_color) +
     geom_pkgname(
       package = pkg_name,
@@ -303,7 +303,16 @@ mysticker <- function(im, img_x, img_y, img_width, img_height,
     ) +
     theme_sticker(size = h_size)
 
-  ggsave(filename = "temp.png", width = 43.9, height = 50.8, dpi = 300, bg = "transparent", units = "mm")
+  ggsave(plot = g,
+     filename = "temp.png",
+     width = 43.9,
+     height = 50.8,
+     dpi = 300,
+     bg = "transparent",
+     units = "mm",
+     device = 'png'
+   )
+  return(g)
 }
 
 server <- function(input, output, session) {
@@ -365,7 +374,7 @@ server <- function(input, output, session) {
 
     output$imgdn <- downloadHandler(
       filename = "my_polaroid_sticker.png",
-      content = function(file = filename) {
+      content = function(file) {
         save_sticker(filename = file, s)
       }
     )
@@ -390,7 +399,7 @@ server <- function(input, output, session) {
     output$imgdn <- downloadHandler(
       filename = "my_polaroid_sticker.png",
       content = function(file) {
-        save_sticker(filename = 'my_polaroid_sticker.png', sticker = s)
+        save_sticker(filename = file, s)
       }
     )
   })
@@ -452,7 +461,7 @@ server <- function(input, output, session) {
       output$imgdn <- downloadHandler(
         filename = "my_polaroid_sticker.png",
         content = function(file) {
-          save_sticker(filename = 'my_polaroid_sticker.png', sticker = s)
+          save_sticker(filename = file, s)
         }
       )
     }

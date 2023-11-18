@@ -5,8 +5,7 @@ account: jhkim
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2010937
-bundleId: 2957285
+bundleId: 7942350
 url: https://jhkim.shinyapps.io/polaroid/
-when: 1585803635.66393
 asMultiple: FALSE
 asStatic: FALSE
