@@ -3,7 +3,8 @@
 Shiny application to generate hexsticker
 
 <!-- badges: start -->
-<img src='https://www.r-pkg.org/badges/version/polaroid'>
+[![CRAN status badge](https://www.r-pkg.org/badges/version/polaroid)]()
+[![polaroid status badge](https://jhk0530.r-universe.dev/badges/polaroid)](https://jhk0530.r-universe.dev/polaroid)
 <!-- badges: end -->
 
 ## :wrench: Install & Run
@@ -12,9 +13,11 @@ Shiny application to generate hexsticker
 # CRAN version. (0.0.1)
 install.packages('polaroid')
 
-# Development Version. (0.1.0)
-# library(remotes)
-remotes::install_github('jhk0530/polaroid')
+# r-universe version (Dev, 0.1.0)
+install.packages(
+  "polaroid",
+  repos = c("https://jhk0530.r-universe.dev", "https://cloud.r-project.org")
+)
 
 library(polaroid)
 polaroid()
