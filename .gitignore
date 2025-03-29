@@ -42,3 +42,4 @@ vignettes/*.pdf
 
 # shinyapps
 inst/polaroid/rsconnect
+inst/polaroid/temp.png

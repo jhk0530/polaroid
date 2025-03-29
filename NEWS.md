@@ -1,3 +1,12 @@
+# polaroid
+
+## polaroid 0.2.0
+
+- Added hexagon direction feature.
+- Label supports for `down` direction
+- Added transparency for hexagon background color.
+- UI modified
+
 # polaroid 0.1.0
 
 > Now you can use polaroid in your local Rstudio again (along 3yr !)

@@ -13,7 +13,9 @@ None
 run polaroid shiny application in appDir
 }
 \examples{
-if(interactive()){ polaroid() }
+if (interactive()) {
+  polaroid()
+}
 
 }
 \seealso{
