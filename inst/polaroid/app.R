@@ -24,7 +24,7 @@ hexagon <- function(size = 1.2, fill = "#1881C2", color = "#87B13F", direction =
   }
   hexd <- rbind(hexd, hexd[1, ])
 
-  geom_polygon(aes_(x = ~x, y = ~y),
+  geom_polygon(aes(x = x, y = y),
     data = hexd, linewidth = size,
     fill = fill, color = color
   )
@@ -119,6 +119,9 @@ ui <- argonDash::argonDashPage(
     # use css file
     tags$head(
       tags$link(rel = "stylesheet", type = "text/css", href = "style.css"),
+      tags$head(
+        tags$link(rel = "shortcut icon", href = "favicon.png")
+      ),
       tags$style(HTML("
         .tooltip-container {
           position: relative;
@@ -618,7 +621,7 @@ server <- function(input, output, session) {
         y = urly,
         family = font_family,
         size = url_size,
-        # color = url_color,
+        color = url_color,
         angle = url_angle
       ) +
       annotation_custom(
