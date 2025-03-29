@@ -3,17 +3,20 @@
 Shiny application to generate hexsticker
 
 <!-- badges: start -->
-[![CRAN status badge](https://www.r-pkg.org/badges/version/polaroid)]()
+[![CRAN status badge](https://www.r-pkg.org/badges/version/polaroid)](https://CRAN.R-project.org/package=polaroid)
+[![CRAN downloads badge](https://cranlogs.r-pkg.org/badges/gemini.R)](https://cran.r-project.org/package=gemini.R)
 [![polaroid status badge](https://jhk0530.r-universe.dev/badges/polaroid)](https://jhk0530.r-universe.dev/polaroid)
+![r-hub badge](https://github.com/jhk0530/polaroid/actions/workflows/rhub.yaml/badge.svg)
+
 <!-- badges: end -->
 
 ## :wrench: Install & Run
 
-```R
-# CRAN version. (0.0.1)
+```r
+# CRAN version
 install.packages('polaroid')
 
-# r-universe version (Dev, 0.1.0)
+# r-universe version
 install.packages(
   "polaroid",
   repos = c("https://jhk0530.r-universe.dev", "https://cloud.r-project.org")
@@ -27,6 +30,12 @@ polaroid()
 ## :rocket: Description and Running Example
 
 <img src='inst/images/Description.png'>
+
+### Features
+
+- Hexagons with `Vertical` and `Horizontal`
+
+- Backgrounds with Transparency
 
 ------
 
