@@ -453,7 +453,7 @@ server <- function(input, output, session) {
           showNotification("Example image not found", type = "error")
           return()
         }
-        message("1")
+
         values$im <- readPNG(example_path)
 
         s <- mysticker(values$im, input$img_x, input$img_y, input$img_width, input$img_height,
@@ -464,7 +464,7 @@ server <- function(input, output, session) {
           background_alpha = input$background_alpha,
           hex_direction = input$hex_direction # 방향 매개변수 추가
         )
-        message("2")
+
         output$img <- renderPlot({
           par(mar = c(0.8, 0.8, 0.8, 0.8))
           plot(imager::load.image("temp.png"), axes = FALSE)
@@ -618,7 +618,7 @@ server <- function(input, output, session) {
         y = urly,
         family = font_family,
         size = url_size,
-        color = url_color,
+        # color = url_color,
         angle = url_angle
       ) +
       annotation_custom(
