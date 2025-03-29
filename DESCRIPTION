@@ -1,6 +1,6 @@
 Package: polaroid
 Title: Create Hex Stickers with 'shiny'
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person(given = "Jinhwan",
            family = "Kim",
@@ -19,6 +19,10 @@ LazyData: true
 RoxygenNote: 7.3.2
 Imports: 
     shiny,
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown,
     hexSticker,
     argonDash,
     argonR,
@@ -29,8 +33,4 @@ Imports:
     shinyjs,
     stringr,
     htmltools
-Suggests:
-    testthat,
-    knitr,
-    rmarkdown
 Config/testthat/edition: 3
