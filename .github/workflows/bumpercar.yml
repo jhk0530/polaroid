@@ -1,0 +1,17 @@
+name: Update R DESCRIPTION dependencies
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+jobs:
+  bumpercar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update R Packages
+        uses: jhk0530/bumpercar@v1.0.0
