@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Update R Packages
-        uses: jhk0530/bumpercar@v1.3.0
+        uses: jhk0530/bumpercar@v1.4.0
