@@ -2,7 +2,7 @@ name: Update R DESCRIPTION dependencies
 
 on:
   schedule:
-    - cron: "0 2 * * 1"
+    - cron: "0 2 * * 1" 
   workflow_dispatch:
 
 jobs:
@@ -15,3 +15,5 @@ jobs:
 
       - name: Update R Packages
         uses: jhk0530/bumpercar@v1.4.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
