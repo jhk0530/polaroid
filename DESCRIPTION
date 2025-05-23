@@ -18,19 +18,19 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
 Imports: 
-    shiny,
+    shiny (>= 1.10.0)
 Suggests:
-    testthat,
-    knitr,
-    rmarkdown,
-    hexSticker,
-    argonDash,
-    argonR,
-    colourpicker,
-    magick,
-    showtext,
-    sysfonts,
-    shinyjs,
-    stringr,
-    htmltools
+    testthat (>= 3.2.3),
+    knitr (>= 1.50),
+    rmarkdown (>= 2.29),
+    hexSticker (>= 0.4.9),
+    argonDash (>= 0.2.5),
+    argonR (>= 0.2.0),
+    colourpicker (>= 1.3.0),
+    magick (>= 2.8.6),
+    showtext (>= 0.9-7),
+    sysfonts (>= 0.8.9),
+    shinyjs (>= 2.1.0),
+    stringr (>= 1.5.1),
+    htmltools (>= 0.5.8.1)
 Config/testthat/edition: 3
